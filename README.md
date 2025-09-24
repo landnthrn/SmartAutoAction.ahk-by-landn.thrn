@@ -47,7 +47,7 @@ Use .bat file to run the ahk script *(skips the choose a version window)*
 
 ---
 
-# If you want it to start on PC loadup  
+# If you want it to start on PC loadup:  
 
 Create a shortcut for the .bat file of your preference *(With `Shift + Q` keybind or without)*  
 
