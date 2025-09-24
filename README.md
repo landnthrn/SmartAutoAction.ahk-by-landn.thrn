@@ -3,6 +3,9 @@
 A AutoHotKey automation far smarter than just a autorun.  
 Allowing you to automate any one key software/game action.  
 
+### Download AutoHotKey V2
+👉 [Download here](https://www.autohotkey.com)  
+
 ---
 
 `Use F1 + (any key other than W)` to auto run that key continously until any other key is pressed  
