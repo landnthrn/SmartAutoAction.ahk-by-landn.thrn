@@ -14,7 +14,7 @@ Allowing you to automate any one key software/game action.
 
 ### Autorun Specifics:
 The autorun keybind works differently than `F1 + any key other than W`  
-Using `F1 + W` (forward in games) won't be canceled by these keys:  
+Using `F1 + W` *(forward in games)* won't be canceled by these keys:  
 `Control, Shift, Caps, Tab, Esc, Alt, A, D, W, Mouse clicks`  
 The autorun will be canceled by any other keys  
 
