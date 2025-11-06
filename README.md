@@ -2,8 +2,8 @@
 
 # SmartAutoAction.ahk by landn.thrn
 
-A AutoHotKey automation far smarter than just a autorun.  
-Allowing you to automate any one key software/game action.
+A AutoHotKey automation far smarter than just a autorun  
+Allowing you to automate any one key software/game action
 
 ---
 
@@ -19,30 +19,30 @@ Double click the `.bat` file to run the `.ahk` script (skips the choose a versio
 ## IF YOU WANT TO RUN THEM THROUGH THE BUILT-IN UI (Recommended)
 *Can also turn them off through the UI*
 
-1. Open your **Documents** folder.  
-2. Create a folder called **Scripts**.  
-3. Inside that `Scripts` folder, create another folder called **AutoSmartAction**.  
-4. Move all the files from this download into the `AutoSmartAction` folder you made.  
-5. Windows search for **Environment Variables**.  
-6. Once the *System Properties* window opens, select **Environment Variables**.  
-7. Under *User Variables*, select **Path** and then **Edit**.  
-8. Click **New** to add a new path to your User Variables.  
+1. Open your **Documents** folder  
+2. Create a folder called **Scripts**  
+3. Inside that `Scripts` folder, create another folder called **AutoSmartAction**  
+4. Move all the files from this download into the `AutoSmartAction` folder you made  
+5. Windows search for **Environment Variables**  
+6. Once the *System Properties* window opens, select **Environment Variables**  
+7. Under *User Variables*, select **Path** and then **Edit**  
+8. Click **New** to add a new path to your User Variables  
 9. Paste the path of your `AutoSmartAction` folder you made — it should look like:  
    `C:\Users\%USERNAME%\Documents\Scripts\AutoSmartAction`
-10. Press **OK > OK > OK** to close Environment Variables.  
+10. Press **OK > OK > OK** to close Environment Variables  
 11. Open a **Command Prompt** window and type:  
     `smartautoaction` OR `autoaction`
 
-    This will display the mini UI that you can use to turn the feature on/off from now on.
+    This will display the mini UI that you can use to turn the feature on/off from now on
 
 ---
 
 ## INFO ABOUT SMART AUTO ACTION
 
-If you're using the **Shift + Q** version you can autorun with `Shift + Q` or `F1 + W`.  
+If you're using the **Shift + Q** version you can autorun with `Shift + Q` or `F1 + W`  
 If you're using just the smartautorun without the Shift + Q included then you can autorun with just `F1 + W` alone
 
-To automate any other key/action continuously, use `F1 + (any key other than W)`.
+To automate any other key/action continuously, use `F1 + (any key other than W)`
 
 ---
 
@@ -56,9 +56,9 @@ The autorun keybinds `Shift + Q` or `F1 + W` work differently than `F1 + (any ke
 
 - Using `Shift + Q` or `F1 + W` won’t be canceled by these keys:  
   `Control, Shift, Caps, Tab, Esc, Alt, A, D, E, F, W, Space, Mouse clicks`  
-  They’ll be canceled by **any other keys**.
+  They’ll be canceled by **any other keys** *(Using 'S' to cancel is most convenient)*
 
-- Using `F1 + (any key other than W)` will be canceled by **any other key press**.
+- Using `F1 + (any key other than W)` will be canceled by **any other key press**
 
 That’s the difference
 
