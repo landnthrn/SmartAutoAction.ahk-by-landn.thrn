@@ -7,8 +7,7 @@ Allowing you to automate any one key software/game action.
 
 ---
 
-### Download AutoHotKey V2
-https://www.autohotkey.com
+[Download AutoHotKey V2](https://www.autohotkey.com)
 
 ---
 
@@ -29,11 +28,7 @@ Double click the `.bat` file to run the `.ahk` script (skips the choose a versio
 7. Under *User Variables*, select **Path** and then **Edit**.  
 8. Click **New** to add a new path to your User Variables.  
 9. Paste the path of your `AutoSmartAction` folder you made — it should look like:  
-
-   \`\`\`
-   C:\Users\%USERNAME%\Documents\Scripts\AutoSmartAction
-   \`\`\`
-
+   `C:\Users\%USERNAME%\Documents\Scripts\AutoSmartAction`
 10. Press **OK > OK > OK** to close Environment Variables.  
 11. Open a **Command Prompt** window and type:  
     `smartautoaction` OR `autoaction`
@@ -45,13 +40,13 @@ Double click the `.bat` file to run the `.ahk` script (skips the choose a versio
 ## INFO ABOUT SMART AUTO ACTION
 
 If you're using the **Shift + Q** version you can autorun with `Shift + Q` or `F1 + W`.  
-If you're using just the smartautorun without the *Shift + Q* included then you can autorun with `F1 + W`.
+If you're using just the smartautorun without the Shift + Q included then you can autorun with just `F1 + W` alone
 
 To automate any other key/action continuously, use `F1 + (any key other than W)`.
 
 ---
 
-**Autorun is configured to auto sprint, not auto walk.**
+**Autorun is configured to auto sprint, not auto walk**
 
 ---
 
@@ -65,7 +60,7 @@ The autorun keybinds `Shift + Q` or `F1 + W` work differently than `F1 + (any ke
 
 - Using `F1 + (any key other than W)` will be canceled by **any other key press**.
 
-That’s the difference.
+That’s the difference
 
 ---
 
@@ -73,11 +68,11 @@ That’s the difference.
 
 Say you're breaking down a tree in a survival game, you would use:  
 `F1 + Left Mouse Click`
-You will automatically keep hitting the tree.
+You will automatically keep hitting the tree
 
 Lots of tree logs and sticks fall on the ground:  
 `F1 + (whatever the interact/pickup button is in your game)`
-You will auto pick up the logs and sticks you’re looking at.
+You will auto pick up the logs and sticks you’re looking at
 
 ---
 
