@@ -37,30 +37,30 @@ This will display the mini UI that you can use to turn the feature on/off from n
 
 ---
 
-## INFO ABOUT SMART AUTO ACTION
+##### COMPARISONS BETWEEN THE REGULAR `SMARTAUTOACTION.BAT` & THE `SHIFT + Q` VERSION:
 
-If you're using the `Shift + Q` version you can autorun with `Shift + Q` or `F1 + W`  
-If you're using just the **smartautorun** without the `Shift + Q` included then you can autorun with just `F1 + W` alone
+### DIFFERENCE IN USE:
 
-To automate any other key/action continuously, use `F1 + (any key other than W)`
+1. If you're using the `Shift + Q` version you can autorun with `Shift + Q` or `F1 + W`  
+  
+2. If you're using just the smartautorun without the `Shift + Q` included then you can autorun with just `F1 + W` alone  
 
----
+In terms of both you can automate any other key/action continuously, use `F1 + (any key other than W)`
 
-**Autorun is configured to auto sprint, not auto walk**
+### DIFFERENCE IN CANCELING:
 
----
+The autorun keybinds Shift + Q or F1 + W work differently than F1 + (any key other than W):
 
-### COMPARISON SPECIFICS
+1. Using `Shift + Q` or `F1 + W` won’t be canceled by these keys:  
+   `Control`, `Shift`, `Caps`, `Tab`, `Esc`, `Alt`, `A`, `D`, `E`, `F`, `W`, `Space`, `Mouse clicks`  
 
-The autorun keybinds `Shift + Q` or `F1 + W` work differently than `F1 + (any key other than W)`:
+   They’ll be canceled by any other keys (Using `S` to cancel is most convenient)
 
-- Using `Shift + Q` or `F1 + W` won’t be canceled by these keys:  
-  `Control`, `Shift`, `Caps`, `Tab`, `Esc`, `Alt`, `A`, `D`, `E`, `F`, `W`, `Space`, `Mouse clicks`  
-  They’ll be canceled by **any other keys** *(Using 'S' to cancel is most convenient)*
-
-- Using `F1 + (any key other than W)` will be canceled by **any other key press**
+2. Using `F1 + (any key other than W)` will be canceled by any other key press
 
 That’s the difference
+
+*Autorun is configured to auto sprint, not auto walk*
 
 ---
 
