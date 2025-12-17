@@ -3,18 +3,12 @@
 SMARTAUTOACTION.AHK BY LANDN.THRN
 
 A AutoHotKey automation far smarter than just a autorun  
-Allowing you to automate any one key software/game action
+Allowing you to automate any one key press/action
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Download AutoHotKey V2:  
 https://www.autohotkey.com
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-IF YOU WANT TO RUN THEM MANUALLY
-
-Double click launcher.bat to run the script (skips the choose a version window)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -55,30 +49,34 @@ COMPARISONS BETWEEN THE F1 ONLY VERSION & THE SHIFT + Q VERSION:
 
 DIFFERENCE IN USE:
 
+For both versions you can automate any other key/action continuously, use  
+F1 + (any key other than W, + mouse clicks & buttons)
+
+As for autorun there's two slightly different versions:
+
 — If you're using the Shift + Q version you can autorun with Shift + Q or F1 + W
 
-— If you're using just the F1 ONLY VERSION then you can autorun with just F1 + W alone
+— If you're using the F1 ONLY VERSION then you autorun with just F1 + W
 
-In terms of both you can automate any other key/action continuously, use F1 + (any key other than W)
-
-*Choose your preferred version through the autoaction UI*
+*The Shift + Q Version is obvioulsy more convenient for games*
 
 ~~~~~~~~~~~~~~~~~~
 
 DIFFERENCE IN CANCELING:
 
-The autorun keybinds Shift + Q or F1 + W work differently than F1 + (any key other than W):
+The autorun keybinds Shift + Q or F1 + W work differently than  
+F1 + (any key other than W + mouse clicks & buttons)):
 
 1. Using Shift + Q or F1 + W won’t be canceled by these keys:  
    Control, Shift, Caps, Tab, Esc, Alt, A, D, E, F, W, Space, Mouse clicks  
 
    They’ll be canceled by any other keys (Using 'S' to cancel is most convenient)
 
-2. Using F1 + (any key other than W) will be canceled by any other key press
+2. Using F1 + (any key other than W + mouse clicks & buttons) will be canceled by any other key press
 
 That’s the difference
 
-*Autorun is configured to auto sprint, not auto walk*
+*Autorun is configured to auto sprint, not auto walk of course*
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -11,8 +11,10 @@ REM Check what's actually running
 call :check_running
 
 REM Show status header with bright green
-powershell -Command "Write-Host 'SMARTAUTOACTION' -ForegroundColor Green"
-powershell -Command "Write-Host '================' -ForegroundColor Green"
+powershell -Command "Write-Host '====================' -ForegroundColor Green"
+powershell -Command "Write-Host '  SMARTAUTOACTION' -ForegroundColor Green"
+powershell -Command "Write-Host '   by landn.thrn' -ForegroundColor Green"
+powershell -Command "Write-Host '====================' -ForegroundColor Green"
 echo.
 
 REM Show status if something is running
@@ -21,11 +23,11 @@ if "%RUNNING_VERSION%"=="regular" (
     echo.
 )
 if "%RUNNING_VERSION%"=="shiftq" (
-    powershell -Command "Write-Host 'STATUS:' -ForegroundColor Green -NoNewline; Write-Host ' Shift+Q version is ACTIVE' -ForegroundColor White"
+    powershell -Command "Write-Host 'STATUS:' -ForegroundColor Green -NoNewline; Write-Host ' Shift + Q version is ACTIVE' -ForegroundColor White"
     echo.
 )
 if "%RUNNING_VERSION%"=="" (
-    powershell -Command "Write-Host 'STATUS:' -ForegroundColor Green -NoNewline; Write-Host ' No version active' -ForegroundColor White"
+    powershell -Command "Write-Host 'STATUS:' -ForegroundColor Green -NoNewline; Write-Host ' No script is active' -ForegroundColor White"
     echo.
 )
 
@@ -58,7 +60,7 @@ goto :menu_loop
 REM Stop any running AutoHotkey scripts first
 call :stop_all
 timeout /t 1 /nobreak >nul
-powershell -Command "Write-Host 'Starting Shift+Q Version...' -ForegroundColor Green"
+powershell -Command "Write-Host 'Starting Shift + Q Version...' -ForegroundColor Green"
 call "%SCRIPT_DIR%launcher.bat" shiftq
 timeout /t 1 /nobreak >nul
 goto :menu_loop
