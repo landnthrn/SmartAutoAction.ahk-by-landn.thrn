@@ -32,9 +32,10 @@ if "%RUNNING_VERSION%"=="" (
 )
 
 REM Menu options with bright green brackets
-powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '1' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start Shift+Q Version (F1 + key + Shift+Q)' -ForegroundColor White"
-powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '2' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start F1 Only Version (F1 + key)' -ForegroundColor White"
+powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '1' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start Shift + Q Version (Shift + Q & F1 + any key)' -ForegroundColor White"
+powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '2' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start F1 Only Version (F1 + any key)' -ForegroundColor White"
 powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '3' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Turn Off' -ForegroundColor White"
+powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '4' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Info' -ForegroundColor White"
 powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host 'Q' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Quit' -ForegroundColor White"
 echo.
 
@@ -44,6 +45,7 @@ REM Handle choice
 if "%choice%"=="1" goto :start_shiftq
 if "%choice%"=="2" goto :start_regular
 if "%choice%"=="3" goto :turn_off
+if "%choice%"=="4" goto :show_info
 if /i "%choice%"=="q" goto :quit
 goto :menu_loop
 
@@ -69,6 +71,71 @@ goto :menu_loop
 call :stop_all
 powershell -Command "Write-Host 'Script has perished' -ForegroundColor White"
 timeout /t 1 /nobreak >nul
+goto :menu_loop
+
+:show_info
+cls
+
+REM Display embedded info content with proper colors
+powershell -Command "Write-Host '====================' -ForegroundColor Green"
+powershell -Command "Write-Host '  SMARTAUTOACTION' -ForegroundColor Green"
+powershell -Command "Write-Host '   by landn.thrn' -ForegroundColor Green"
+powershell -Command "Write-Host '====================' -ForegroundColor Green"
+echo.
+powershell -Command "Write-Host 'COMPARISONS BETWEEN THE F1 ONLY VERSION & THE SHIFT + Q VERSION:' -ForegroundColor Green"
+echo.
+powershell -Command "Write-Host '~~~~~~~~~~~~~~~~~~' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'DIFFERENCE IN USE:' -ForegroundColor Green"
+powershell -Command "Write-Host 'For both versions you can automate any other key/action continuously, use' -ForegroundColor White"
+powershell -Command "Write-Host 'F1 + (any key other than W, + mouse clicks & buttons)' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'As for autorun there''s two slightly different versions:' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '- If you''re using the Shift + Q version you can autorun with Shift + Q or F1 + W' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '- If you''re using the F1 ONLY VERSION then you autorun with just F1 + W' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '*The Shift + Q Version is obviously more convenient for games*' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '~~~~~~~~~~~~~~~~~~' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'DIFFERENCE IN CANCELING:' -ForegroundColor Green"
+powershell -Command "Write-Host 'The autorun keybinds Shift + Q or F1 + W work differently than' -ForegroundColor White"
+powershell -Command "Write-Host 'F1 + (any key other than W + mouse clicks & buttons):' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '1. Using Shift + Q or F1 + W won''t be canceled by these keys:' -ForegroundColor White"
+powershell -Command "Write-Host '   Control, Shift, Caps, Tab, Esc, Alt, A, D, E, F, W, Space, Mouse clicks' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '   They''ll be canceled by any other keys (Using ''S'' to cancel is most convenient)' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '2. Using F1 + (any key other than W + mouse clicks & buttons) will be canceled by any other key press' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'That''s the difference' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '*Autorun is configured to auto sprint, not auto walk of course*' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'EXAMPLE OF HOW IT''S SMARTER THAN A REGULAR AUTORUN .AHK' -ForegroundColor Green"
+echo.
+powershell -Command "Write-Host 'Say you''re breaking down a tree in a survival game, you would use:' -ForegroundColor White"
+powershell -Command "Write-Host 'F1 + Left Mouse Click' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'You will automatically keep hitting the tree' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '~~~~~~~~~~~~~~~~~~' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'Lots of tree logs and sticks fall on the ground:' -ForegroundColor White"
+powershell -Command "Write-Host 'F1 + (whatever the interact/pickup button is in your game)' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'You will auto pick up the logs and sticks you''re looking at' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' -ForegroundColor White"
+echo.
+powershell -Command "Write-Host 'Press any key to go back to menu . . .' -ForegroundColor Green"
+
+pause >nul
 goto :menu_loop
 
 :quit

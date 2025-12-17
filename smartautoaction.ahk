@@ -295,11 +295,11 @@ StartAutoRepeat(key) {
     global autoRepeat, currentKey, isWKey, refreshMs
     if autoRepeat
         StopAutoRepeat()
-
+    
     autoRepeat := true
     currentKey := key
     isWKey := (key = "w")
-
+    
     ; Special case for W key - also hold Shift for sprinting
     if (isWKey) {
         Send("{Shift down}")
@@ -316,7 +316,7 @@ StopAutoRepeat() {
     global autoRepeat, currentKey, isWKey
     if !autoRepeat
         return
-
+    
     autoRepeat := false
     isWKey := false
 
