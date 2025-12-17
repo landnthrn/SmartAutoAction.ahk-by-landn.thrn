@@ -1,4 +1,4 @@
-<img width="540" height="316" alt="SmartAutoAction UI Preview" src="https://github.com/user-attachments/assets/209e5c57-1824-44cc-8d42-258662389fc2" />
+<img width="512" height="284" alt="SmartAutoAction UI Preview" src="https://github.com/user-attachments/assets/51ed820d-4043-4d01-98e5-855c79748396" />
 
 # SMARTAUTOACTION.AHK BY LANDN.THRN
 
