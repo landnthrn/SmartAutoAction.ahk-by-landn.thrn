@@ -1,6 +1,6 @@
 <img width="512" height="284" alt="SmartAutoAction UI Preview" src="https://github.com/user-attachments/assets/51ed820d-4043-4d01-98e5-855c79748396" />
 
-# SMARTAUTOACTION.AHK BY LANDN.THRN
+# SMARTAUTOACTION.AHK
 
 A AutoHotKey automation far smarter than just a autorun  
 Allowing you to automate any one key press/action
