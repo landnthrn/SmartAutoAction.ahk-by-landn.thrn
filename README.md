@@ -31,7 +31,7 @@ This will display the mini UI that you can use to turn the feature on/off, and c
 
 ---
 
-### COMPARISONS BETWEEN THE F1 ONLY VERSION & THE `SHIFT + Q` VERSION:
+### COMPARISONS BETWEEN THE `F1` ONLY VERSION & THE `SHIFT + Q` VERSION:
 
 #### DIFFERENCE IN USE:
 
