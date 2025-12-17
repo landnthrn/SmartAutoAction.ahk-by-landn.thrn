@@ -6,7 +6,7 @@ REM Parameters:
 REM %1 = mode ("regular" or "shiftq")
 
 if "%1"=="" (
-    echo Null ^> Don't worry about this file :) Just for maintence of the main .bat
+    echo Null ^> Don't worry about this file, just a helper for the main .bat 
     pause
     exit /b 1
 )

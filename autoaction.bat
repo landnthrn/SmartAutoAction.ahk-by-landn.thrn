@@ -17,7 +17,7 @@ echo.
 
 REM Show status if something is running
 if "%RUNNING_VERSION%"=="regular" (
-    powershell -Command "Write-Host 'STATUS:' -ForegroundColor Green -NoNewline; Write-Host ' Regular version is ACTIVE' -ForegroundColor White"
+    powershell -Command "Write-Host 'STATUS:' -ForegroundColor Green -NoNewline; Write-Host ' F1 Only version is ACTIVE' -ForegroundColor White"
     echo.
 )
 if "%RUNNING_VERSION%"=="shiftq" (
@@ -30,8 +30,8 @@ if "%RUNNING_VERSION%"=="" (
 )
 
 REM Menu options with bright green brackets
-powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '1' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start Regular Version (F1 + key)' -ForegroundColor White"
-powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '2' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start Shift+Q Version (F1 + key + Shift+Q)' -ForegroundColor White"
+powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '1' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start Shift+Q Version (F1 + key + Shift+Q)' -ForegroundColor White"
+powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '2' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Start F1 Only Version (F1 + key)' -ForegroundColor White"
 powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host '3' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Turn Off' -ForegroundColor White"
 powershell -Command "Write-Host '[' -ForegroundColor Green -NoNewline; Write-Host 'Q' -ForegroundColor White -NoNewline; Write-Host ']' -ForegroundColor Green -NoNewline; Write-Host ' Quit' -ForegroundColor White"
 echo.
@@ -39,8 +39,8 @@ echo.
 set /p "choice=Enter choice: "
 
 REM Handle choice
-if "%choice%"=="1" goto :start_regular
-if "%choice%"=="2" goto :start_shiftq
+if "%choice%"=="1" goto :start_shiftq
+if "%choice%"=="2" goto :start_regular
 if "%choice%"=="3" goto :turn_off
 if /i "%choice%"=="q" goto :quit
 goto :menu_loop
@@ -49,7 +49,7 @@ goto :menu_loop
 REM Stop any running AutoHotkey scripts first
 call :stop_all
 timeout /t 1 /nobreak >nul
-powershell -Command "Write-Host 'Starting Regular Version...' -ForegroundColor Green"
+powershell -Command "Write-Host 'Starting F1 Only Version...' -ForegroundColor Green"
 call "%SCRIPT_DIR%launcher.bat" regular
 timeout /t 1 /nobreak >nul
 goto :menu_loop
@@ -90,7 +90,7 @@ if %errorlevel%==0 (
             )
         )
     )
-    REM If we get here, it's regular mode
+    REM If we get here, it's F1 Only mode
     set "RUNNING_VERSION=regular"
 )
 
