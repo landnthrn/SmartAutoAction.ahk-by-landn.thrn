@@ -31,7 +31,7 @@ This will display the mini UI that you can use to turn the feature on/off, and c
 
 ---
 
-### COMPARISONS BETWEEN THE REGULAR VERSION & THE `SHIFT + Q` VERSION:
+### COMPARISONS BETWEEN THE F1 ONLY VERSION & THE `SHIFT + Q` VERSION:
 
 #### DIFFERENCE IN USE:
 
@@ -42,7 +42,7 @@ As for autorun there's two slightly different versions:
 
 1. If you're using the `Shift + Q` version you can autorun with `Shift + Q` or `F1 + W`  
 
-2. If you're using the other version then you autorun with just `F1 + W`  
+2. If you're using the F1 ONLY VERSION then you autorun with just `F1 + W`  
 
 *The Shift + Q Version is obvioulsy more convenient for games*
 
