@@ -3,7 +3,7 @@
 # SMARTAUTOACTION.AHK BY LANDN.THRN
 
 A AutoHotKey automation far smarter than just a autorun  
-Allowing you to automate any one key software/game action
+Allowing you to automate any one key press/action
 
 ---
 
