@@ -1,6 +1,6 @@
 ---
 
-# SmartAutoAction.ahk by landn.thrn
+# SMARTAUTOACTION.AHK BY LANDN.THRN
 
 A AutoHotKey automation far smarter than just a autorun  
 Allowing you to automate any one key software/game action
@@ -11,67 +11,67 @@ Allowing you to automate any one key software/game action
 
 ---
 
-## IF YOU WANT TO RUN THEM MANUALLY
-Double click the `.bat` file to run the `.ahk` script (skips the choose a version window)
+## HOW TO LAUNCH THE MINI COMMAND PROMPT UI EASILY:
 
----
-
-## IF YOU WANT TO RUN THEM THROUGH THE BUILT-IN UI (Recommended)
-*Can also turn them off through the UI*
-
-- Open your `**Documents** folder  
+- Open your **Documents** folder  
 - Create a folder called **Scripts**  
-- Inside that **Scripts** folder, create another folder called **AutoSmartAction**  
-- Move all the files from this download into the **AutoSmartAction** folder you made  
+- Inside that **Scripts** folder, create another folder called **SmartAutoAction**  
+- Move all the files from this download into the **SmartAutoAction** folder you made  
 - Windows search for **Environment Variables**  
 - Once the **System Properties** window opens, select **Environment Variables**  
 - Under **User Variables**, select **Path** and then **Edit**  
 - Click **New** to add a new path to your **User Variables**  
-- Paste the path of your **AutoSmartAction** folder you made — it should look like:  
-   `C:\Users\%USERNAME%\Documents\Scripts\AutoSmartAction`
+- Paste the path of your **SmartAutoAction** folder you made — it should look like:  
+  `C:\Users\%USERNAME%\Documents\Scripts\SmartAutoAction`
 - Press **OK > OK > OK** to close **Environment Variables**  
 - Open a **Command Prompt** window and type:  
-    `smartautoaction` OR `autoaction`
+  `autoaction`
 
-This will display the mini UI that you can use to turn the feature on/off from now on
+This will display the mini UI that you can use to turn the feature on/off, and check status
 
 ---
 
-##### COMPARISONS BETWEEN THE REGULAR `SMARTAUTOACTION.BAT` & THE `SHIFT + Q` VERSION:
+### COMPARISONS BETWEEN THE REGULAR VERSION & THE `SHIFT + Q` VERSION:
 
-### DIFFERENCE IN USE:
+#### DIFFERENCE IN USE:
+
+For both versions you can automate any other key/action continuously, use  
+`F1 + (any key other than W, + mouse clicks & buttons)`
+
+As for autorun there's two slightly different versions:
 
 1. If you're using the `Shift + Q` version you can autorun with `Shift + Q` or `F1 + W`  
-  
-2. If you're using just the smartautorun without the `Shift + Q` included then you can autorun with just `F1 + W` alone  
 
-In terms of both you can automate any other key/action continuously, use `F1 + (any key other than W)`
+2. If you're using the other version then you autorun with just `F1 + W`  
 
-### DIFFERENCE IN CANCELING:
+*The Shift + Q Version is obvioulsy more convenient for games*
 
-The autorun keybinds Shift + Q or F1 + W work differently than F1 + (any key other than W):
+#### DIFFERENCE IN CANCELING AUTORUN:
+
+The autorun keybinds `Shift + Q` or `F1 + W` cancel differently than  
+`F1 + (any key other than W + mouse clicks & buttons))`:
 
 1. Using `Shift + Q` or `F1 + W` won’t be canceled by these keys:  
    `Control`, `Shift`, `Caps`, `Tab`, `Esc`, `Alt`, `A`, `D`, `E`, `F`, `W`, `Space`, `Mouse clicks`  
 
    They’ll be canceled by any other keys (Using `S` to cancel is most convenient)
 
-2. Using `F1 + (any key other than W)` will be canceled by any other key press
+2. Using `F1 + (any key other than W + mouse clicks & buttons)` will be canceled by any other key press
 
 That’s the difference
 
-*Autorun is configured to auto sprint, not auto walk*
+*Autorun is configured to auto sprint, not auto walk of course*
 
 ---
 
-## Example of How It’s Smarter Than a Regular Autorun .ahk
+### EXAMPLE OF HOW IT’S SMARTER THAN A REGULAR AUTORUN .AHK
 
 Say you're breaking down a tree in a survival game, you would use:  
-`F1 + Left Mouse Click`
+`F1 + Left Mouse Click`  
 You will automatically keep hitting the tree
 
 Lots of tree logs and sticks fall on the ground:  
-`F1 + (whatever the interact/pickup button is in your game)`
+`F1 + (whatever the interact/pickup button is in your game)`  
 You will auto pick up the logs and sticks you’re looking at
 
 ---
