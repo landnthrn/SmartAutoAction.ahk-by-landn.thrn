@@ -35,7 +35,7 @@ This will display the mini UI that you can use to turn the feature on/off, and c
 
 #### DIFFERENCE IN USE:
 
-For both versions you can automate any other key/action continuously, use  
+For both versions you can automate any other key/action continuously, using
 `F1 + (any key other than W, + mouse clicks & buttons)`
 
 As for autorun there's two slightly different versions:
